@@ -9,7 +9,7 @@ A Slack standalone script for exporting messages and file attachments from priva
 
 A similar service is provided by Slack for workspace admins at [https://my.slack.com/services/export](https://my.slack.com/services/export) (where `my` can be replaced with your full workspace name to refer to a workspace different than your default). However, it can only access public channels, while `slack-exporter` can retrieve data from any private channel accessible to your user account.
 
-This script exports the history of messages and threads into a zip archive compatible with Slack's built-in import function.
+This script exports the history of messages and threads into a zip archive compatible with Slack's built-in import feature.
 
 ## Authentication with Slack
 
