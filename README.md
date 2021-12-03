@@ -41,9 +41,9 @@ There are one way to use `slack-exporter` (detailed below). A Slack API token is
 
 ## Known issues
 
-1. If you will not import or merge users (selecting the "Don't import these users, just their messages" option), you need to use the `--skipfiles` option because importing into Slack will not complete properly.
+1. If you will not import or merge users (selecting the "Don't import these users, just their messages" option) at the user import stage, you need to use the `--skipfiles` option because importing into Slack will not complete properly.
 For example: `python exporter.py --all -o /home/myuser/slack-import/ --skipfiles`
-2. If you want to import history with files, you don't need to use the `--skipfiles` option, but you must select one of these options: "Merge", "Create and invite", or "Create as deactivated" when you import a messages history using Slack's built-in import feature.
+2. If you want to import history with files, you don't need to use the `--skipfiles` option, but you must select one of these options: "Merge", "Create and invite", or "Create as deactivated" at the user import stage when you import a messages history using Slack's built-in import feature.
 For example: `python exporter.py --all -o /home/myuser/slack-import/`
 
 ## Author
